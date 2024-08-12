@@ -8,6 +8,8 @@ import Home from './components/Home.jsx'
 import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
 import Params from './components/Params.jsx'
+import Login from './components/Login.jsx'
+import Register from './components/Register.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -35,8 +37,11 @@ const router = createBrowserRouter(
       <Route path='/' element={<App/> }>
           <Route path='' element={<Home/>}/>
           <Route path='about' element={<About/>}/>
+          <Route path='login' element={<Login/>}/>
           <Route path='contact' element={<Contact/>}/>
+          <Route path='register' element={<Register/>}/>
           <Route path='user/:id' element={<Params/>}/>
+          
       </Route>
   )
 )
